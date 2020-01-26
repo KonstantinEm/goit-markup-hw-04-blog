@@ -27,7 +27,6 @@ body {
   font-family: var(--title-font-family);
   font-weight: 900;
   text-transform: uppercase;
-  
 }
 .logo:hover {
   color: var(--hover-focus-color);
@@ -127,6 +126,7 @@ body {
   text-decoration: none;
   list-style-type: none;
 }
+
 .shop-item:not(:nth-child(4n)) {
   margin-right: 30px;
 }
@@ -134,17 +134,20 @@ body {
   margin-bottom: 0;
 }
 .name-cost {
-
   text-decoration: none;
 }
-.shop-item-sign:hover .price{
-  var(--button-color);
+
+.name-cost:hover .shop-item-sign {
+  background-color: var(--hover-focus-color);
+}
+.name-cost:hover .price {
+  background-color: var(--button-color);
 }
 .item-description {
   background-color: var(--shop-item-sign-color);
 }
 .shop-item-sign {
-  background-color: var(--shop-item-sign-color) ;
+  background-color: var(--shop-item-sign-color);
   display: flex;
   margin: 0;
   font-size: 18px;
@@ -162,20 +165,20 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-  }
-.shop-item-sign:hover
-.price {
+}
+.shop-item-sign:hover .price {
   background-color: var(--button-color);
 }
 
-.shop-item-sign:focus
-.price {
+.shop-item-sign:focus .price {
   background-color: var(--button-color);
 }
 .shop-item-sign:hover {
   background-color: var(--hover-focus-color);
 }
-
+.shop-item-sign:focus {
+  background-color: var(--button-color);
+}
 .price {
   display: flex;
   justify-content: center;
@@ -194,14 +197,6 @@ img {
   background-color: var(--button-color);
 }
 p {
-  margin: 0;
-  font-size: 14px;
-  line-height: 1.2;
-  color: var(--main-color);
-  font-family: var(--main-font-faimily);
-  width: 347px;
-  padding-top: 20px;
-  padding-bottom: 20px;
 }
 img {
   display: block;
@@ -209,7 +204,9 @@ img {
   height: auto;
 }
 /* BLOG */
-
+.blog-section {
+  padding-bottom: 45px;
+}
 
 .blog {
   display: flex;
@@ -217,7 +214,6 @@ img {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  margin-bottom: 45px;
 }
 .blog-article {
   display: flex;
@@ -232,8 +228,8 @@ img {
 .article-title {
   margin: 0;
   position: relative;
-  padding-top: 15px;
-  padding-bottom: 15px;
+
+  margin-bottom: 30px;
 }
 
 .article-title::after {
@@ -244,6 +240,15 @@ img {
   width: 135px;
   bottom: -15px;
   left: 0;
+}
+.paragraph {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 1.2;
+  color: var(--main-color);
+  font-family: var(--main-font-faimily);
+  width: 347px;
 }
 .read-more-link {
   text-decoration: none;
